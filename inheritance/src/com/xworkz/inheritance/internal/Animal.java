@@ -6,6 +6,10 @@ public class Animal {
     public void eat() {
         System.out.println(name + " eats food");
     }
+
+    public void sound() {
+
+    }
 }
 
 
