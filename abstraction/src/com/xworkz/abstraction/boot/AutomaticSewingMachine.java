@@ -3,6 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.SewingMachine;
 
 public class AutomaticSewingMachine extends SewingMachine {
+    public AutomaticSewingMachine(double weight) {
+        super(weight);
+    }
+@Override
+public void showModel() {
+    System.out.println("Model Singer AutoPro 5000");
+}
+
     public void startMachine() {
         System.out.println("Sewing machine started.");
     }

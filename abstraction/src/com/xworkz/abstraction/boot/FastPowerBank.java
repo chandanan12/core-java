@@ -3,7 +3,16 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.PowerBank;
 
 public class FastPowerBank extends PowerBank {
+    public FastPowerBank(int capacity) {
+        super(capacity);
+    }
+@Override
+public void displayBrand() {
+    System.out.println("Brand MI PowerBank");
+}
+
     public void turnOn() {
+
         System.out.println("Powerbank turned ON.");
     }
     public void chargeMobile() {

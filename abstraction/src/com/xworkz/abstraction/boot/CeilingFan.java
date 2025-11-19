@@ -3,6 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.Fan;
 
 public class CeilingFan extends Fan {
+    public CeilingFan(double price) {
+        super(price);
+    }
+
+    @Override
+    public void showBrand() {
+        System.out.println("fan brand is usha");
+    }
     public void turnOn() {
         System.out.println("Ceiling fan is turned ON.");
     }
@@ -21,5 +29,6 @@ public class CeilingFan extends Fan {
 
     public void rotate() {
         System.out.println("Fan blades are rotating clockwise.");
+
     }
 }

@@ -3,6 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.Appliance;
 
 public class WashingMachine extends Appliance {
+    public WashingMachine(int price){
+        super( price);
+    }
+    @Override
+    public void warrantyInfo() {
+
+        System.out.println("Warranty at 2 years on product.");
+    }
    public void turnOn()
     { System.out.println("Washing machine turned on."); }
     public void turnOff()

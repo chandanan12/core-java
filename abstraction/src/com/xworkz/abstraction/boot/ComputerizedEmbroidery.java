@@ -3,7 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.EmbroideryMachine;
 
 public class ComputerizedEmbroidery extends EmbroideryMachine {
-   public void startMachine() {
+    public ComputerizedEmbroidery(String brand) {
+        super(brand);
+    }
+@Override
+public void machineMode() {
+    System.out.println("it is  Automatic Embroidery Mode");
+}
+    public void startMachine() {
         System.out.println("Embroidery machine started.");
     }
    public void stopMachine() {

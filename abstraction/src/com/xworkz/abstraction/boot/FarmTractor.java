@@ -3,6 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.Tractor;
 
 public class FarmTractor extends Tractor {
+    public FarmTractor(float enginePower) {
+        super(enginePower);
+    }
+    @Override
+    public void showBrand() {
+        System.out.println("Brand Mahindra Arjun 605 DI");
+    }
+
     public void startEngine() {
         System.out.println("Tractor engine started.");
     }

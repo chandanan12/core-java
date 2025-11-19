@@ -3,7 +3,16 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.IrrigationSystem;
 
 public class DripIrrigation extends IrrigationSystem {
-   public void turnOnPump() {
+    public DripIrrigation(String type) {
+        super(type);
+    }
+
+    @Override
+    public void systemBrand() {
+        System.out.println("the brand of drip having irrigation_system");
+    }
+
+    public void turnOnPump() {
         System.out.println("Water pump turned ON.");
     }
    public void setWaterLevel() {

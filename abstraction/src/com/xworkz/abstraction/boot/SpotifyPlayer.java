@@ -3,6 +3,14 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.MusicPlayer;
 
 public class SpotifyPlayer extends MusicPlayer {
+    public SpotifyPlayer(int voulume) {
+        super(voulume);
+    }
+    @Override
+    public void volumeInfo() {
+
+    }
+
     public void play() { System.out.println("Playing song on Spotify."); }
     public void pause() { System.out.println("Pausing song."); }
     public void stop() { System.out.println("Stopping song."); }

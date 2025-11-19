@@ -3,7 +3,16 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.SmartWatch;
 
 public class DigitalSmartWatch extends SmartWatch {
-  public   void trackSteps() {
+    public DigitalSmartWatch(float heart_rate) {
+        super(heart_rate);
+    }
+@Override
+public void watchMode() {
+    System.out.println("Fitness Tracking Mode Enabled");
+}
+
+    public   void trackSteps() {
+
         System.out.println("Tracking daily steps...");
     }
     public void checkHeartRate() {

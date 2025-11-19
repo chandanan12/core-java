@@ -3,7 +3,15 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.Bluetooth;
 
 public class BluetoothSpeaker extends Bluetooth {
-   public void turnOn() {
+    public BluetoothSpeaker(int price) {
+        super(price);
+    }
+@Override
+public void showBrand() {
+    System.out.println("Brand JBL Go 3");
+}
+
+    public void turnOn() {
         System.out.println("Bluetooth speaker turned ON.");
     }
     public void turnOff() {

@@ -3,6 +3,13 @@ package com.xworkz.abstraction.boot;
 import com.xworkz.abstraction.abstrct.FloorGrindMachine;
 
 public class ConcreteGrinder extends FloorGrindMachine {
+    public ConcreteGrinder(double weight) {
+        super(weight);
+    }
+   @Override
+   public void showPower() {
+       System.out.println("the power of grinder");
+}
     public void startMachine() {
         System.out.println("Floor grinding machine started.");
     }
