@@ -16,18 +16,19 @@ public class Main {
         a.warrantyInfo();
         a.customerSupport();
 
-        Vehicle v = new Car();
+        Vehicle v = new Car(80);
                 v.start();
                 v.accelerate();
-                v.brake();
+//                v.brake();
                 v.stop();
-                v.fuelType();
+//                v.fuelType();
         v.serviceInfo();
         v.insuranceDetails();
         Vehicle.vehicleRules();
 
-        Computer c = new Laptop();
-        c.boot(); c.installSoftware();
+        Computer c = new Laptop("black");
+        c.boot();
+        c.installSoftware();
         c.runProgram();
         c.uninstallSoftware();
         c.shutdown();
@@ -36,7 +37,7 @@ public class Main {
         Computer.computerRules();
 
         Airline.showGuidelines();
-       Airline b = new Emirates();
+       Airline b = new Emirates(true);
         b.bookTicket();
         b.checkIn();
         b.boardFlight();
@@ -45,7 +46,7 @@ public class Main {
         b.baggageDetails();
         b.customerHelpdesk();
 
-        MusicPlayer m = new SpotifyPlayer();
+        MusicPlayer m = new SpotifyPlayer(10);
         m.play(); m.nextTrack();
         m.pause();
         m.previousTrack();
@@ -54,7 +55,7 @@ public class Main {
         m.volumeInfo();
         m.subscriptionInfo();
 
-        Camera camera = new DSLRCamera("dualcamera");
+        Camera camera = new DSLRCamera("dual camera");
         camera.clickPhoto();
         camera.zoomIn();
         camera.recordVideo();
@@ -64,7 +65,7 @@ public class Main {
         camera.storageInfo();
         camera.batteryInfo();
 
-        Robot r = new ServiceRobot();
+        Robot r = new ServiceRobot('A');
         r.startTask();
         r.speak();
         r.walk();
@@ -74,7 +75,7 @@ public class Main {
         r.batteryStatus();
         r.maintenanceInfo();
 
-    Payment p = new UpiPayment();
+    Payment p = new UpiPayment(10000);
         p.makePayment();
         p.verifyTransaction();
         p.generateReceipt();
@@ -84,7 +85,7 @@ public class Main {
         p.customerSupport();
         p.transactionLimit();
 
-        Transport t = new Bus();
+        Transport t = new Bus(100);
         t.start();
         t.accelerate();
         t.honk();
@@ -94,7 +95,7 @@ public class Main {
         t.serviceDetails();
         t.vehicleType();
 
-        DeliveryService d = new AmazonDelivery();
+        DeliveryService d = new AmazonDelivery("chandu");
         d.acceptOrder();
         d.packItem();
         d.dispatchOrder();
@@ -104,18 +105,18 @@ public class Main {
         d.showCompanyName();
         d.showDeliveryType();
 
-        Fan f = new CeilingFan();
+        Fan f = new CeilingFan(4000);
         f.turnOn();
         f.increaseSpeed();
         f.rotate();
         f.decreaseSpeed();
         f.turnOff();
-        CeilingFan cf = new CeilingFan();
+        CeilingFan cf = new CeilingFan(4000);
         cf.showBrand();
         cf.showColor();
         CeilingFan.powerSupplyType();
 
-        FloorGrindMachine machine = new ConcreteGrinder();
+        FloorGrindMachine machine = new ConcreteGrinder(40);
         machine.startMachine();
         machine.adjustSpeed();
         machine.cleanSurface();
@@ -126,7 +127,7 @@ public class Main {
         ConcreteGrinder.machineType();
 
 
-        SewingMachine x = new AutomaticSewingMachine();
+        SewingMachine x = new AutomaticSewingMachine(10);
         x.startMachine();
         x.stitchCloth();
         x.adjustSpeed();
@@ -147,7 +148,7 @@ public class Main {
         device.speakerMode();
         BluetoothSpeaker.bluetoothVersion();
 
-        IrrigationSystem irrigation = new DripIrrigation();
+        IrrigationSystem irrigation = new DripIrrigation("Drip");
         irrigation.turnOnPump();
         irrigation.setWaterLevel();
         irrigation.startSprinklers();
@@ -158,7 +159,7 @@ public class Main {
         DripIrrigation.irrigationVersion();
 
 
-        Tractor tractor = new FarmTractor();
+        Tractor tractor = new FarmTractor(100);
         tractor.startEngine();
         tractor.ploughField();
         tractor.sowSeeds();
@@ -169,7 +170,7 @@ public class Main {
         FarmTractor.tractorVersion();
 
 
-        EmbroideryMachine em = new ComputerizedEmbroidery();
+        EmbroideryMachine em = new ComputerizedEmbroidery("computer");
         em.startMachine();
         em.loadPattern();
         em.changeThreadColor();
@@ -191,7 +192,7 @@ public class Main {
         SmartPhone.osVersion();
 
 
-        SmartWatch sw = new DigitalSmartWatch();
+        SmartWatch sw = new DigitalSmartWatch((float) 100 /70);
         sw.trackSteps();
         sw.checkHeartRate();
         sw.showNotifications();
@@ -201,7 +202,7 @@ public class Main {
         sw.watchMode();
         DigitalSmartWatch.softwareVersion();
 
-        PowerBank pb = new FastPowerBank();
+        PowerBank pb = new FastPowerBank(100);
         pb.turnOn();
         pb.chargeMobile();
         pb.checkBatteryLevel();
